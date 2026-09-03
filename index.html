@@ -17,7 +17,6 @@
 
 <header class="site-header">
   <nav class="nav-wrap">
-    <a href="#top" class="logo">AJ<span class="logo-dot">.</span></a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -195,65 +194,16 @@
       </div>
 
       <h3 class="more-projects-title">More Projects</h3>
-      <div class="project-grid compact">
-
-        <article class="project-card">
-          <h3>Backbone — Clinical PDF RAG Pipeline</h3>
-          <p>Parses medical PDFs, scrubs PHI, retrieves relevant passages via BM25, and uses Claude to produce a structured, citation-verified assessment for hospice eligibility evaluation.</p>
-          <div class="tag-row small"><span class="tag">RAG</span><span class="tag">BM25</span><span class="tag">Claude</span></div>
-          <a class="project-link" href="https://github.com/AniJP/backbone_assessment" target="_blank" rel="noopener">GitHub ↗</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Local LLM Benchmarking &amp; Assistant</h3>
-          <p>Benchmark CLI for Ollama streaming chat (TTFT, decode tokens/s, latency) plus a FastAPI + browser UI for local chat.</p>
-          <div class="tag-row small"><span class="tag">Ollama</span><span class="tag">FastAPI</span></div>
-          <a class="project-link" href="https://github.com/AniJP/local-ollama-bench" target="_blank" rel="noopener">GitHub ↗</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Hybrid RAG over PDF</h3>
-          <p>Hybrid retrieval-augmented generation combining BM25 lexical search with dense OpenAI-embedding retrieval and rank fusion for grounded PDF Q&amp;A.</p>
-          <div class="tag-row small"><span class="tag">BM25</span><span class="tag">Chroma</span><span class="tag">OpenAI Embeddings</span></div>
-          <a class="project-link" href="https://github.com/AniJP/Hybrid-RAG-" target="_blank" rel="noopener">GitHub ↗</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Multilingual Toxicity &amp; Intent Classification</h3>
-          <p>Multi-task NLP system on XLM-RoBERTa-Large for toxicity and harmful-intent classification across 15+ languages, trained with PyTorch DDP.</p>
-          <div class="tag-row small"><span class="tag">XLM-RoBERTa</span><span class="tag">Multi-Task Learning</span></div>
-          <a class="project-link" href="https://github.com/AniJP/Multilingual-Toxicity-Classification-with-Intent-Detection" target="_blank" rel="noopener">GitHub ↗</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Student Performance Prediction API</h3>
-          <p>FastAPI service predicting student pass/fail outcomes from academic and personal factors, with Pydantic validation and interactive docs.</p>
-          <div class="tag-row small"><span class="tag">FastAPI</span><span class="tag">Scikit-learn</span></div>
-          <a class="project-link" href="https://github.com/AniJP/Student_performance_API" target="_blank" rel="noopener">GitHub ↗</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Bitcoin Price Predictor</h3>
-          <p>Streamlit app predicting Bitcoin prices with a Random Forest model, with interactive charts and RMSE performance tracking.</p>
-          <div class="tag-row small"><span class="tag">Streamlit</span><span class="tag">Random Forest</span></div>
-          <a class="project-link" href="https://github.com/AniJP/bitcoin-price-predictor" target="_blank" rel="noopener">GitHub ↗</a>
-        </article>
-
-        <article class="project-card">
-          <h3>EM Clustering with Gaussian Mixture Models</h3>
-          <p>From-scratch Expectation-Maximization implementation for clustering Wikipedia articles via TF-IDF vectors and diagonal-covariance GMMs.</p>
-          <div class="tag-row small"><span class="tag">EM Algorithm</span><span class="tag">GMM</span><span class="tag">TF-IDF</span></div>
-          <a class="project-link" href="https://github.com/AniJP/EM_Clustering_with_Gaussian_Mixture_model" target="_blank" rel="noopener">GitHub ↗</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Loan Eligibility Prediction <span class="badge">team project</span></h3>
-          <p>Collaborative data science project analyzing loan application data to predict approval outcomes, covering the full EDA-to-model-evaluation workflow.</p>
-          <div class="tag-row small"><span class="tag">EDA</span><span class="tag">Classification</span></div>
-          <a class="project-link" href="https://github.com/AniJP/Loan_eligibility_Prediction" target="_blank" rel="noopener">GitHub ↗</a>
-        </article>
-
-      </div>
+      <ul class="more-projects-list">
+        <li><a href="https://github.com/AniJP/backbone_assessment" target="_blank" rel="noopener"><span>Backbone — Clinical PDF RAG Pipeline</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a></li>
+        <li><a href="https://github.com/AniJP/local-ollama-bench" target="_blank" rel="noopener"><span>Local LLM Benchmarking &amp; Assistant</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a></li>
+        <li><a href="https://github.com/AniJP/Hybrid-RAG-" target="_blank" rel="noopener"><span>Hybrid RAG over PDF</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a></li>
+        <li><a href="https://github.com/AniJP/Multilingual-Toxicity-Classification-with-Intent-Detection" target="_blank" rel="noopener"><span>Multilingual Toxicity &amp; Intent Classification</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a></li>
+        <li><a href="https://github.com/AniJP/Student_performance_API" target="_blank" rel="noopener"><span>Student Performance Prediction API</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a></li>
+        <li><a href="https://github.com/AniJP/bitcoin-price-predictor" target="_blank" rel="noopener"><span>Bitcoin Price Predictor</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a></li>
+        <li><a href="https://github.com/AniJP/EM_Clustering_with_Gaussian_Mixture_model" target="_blank" rel="noopener"><span>EM Clustering with Gaussian Mixture Models</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a></li>
+        <li><a href="https://github.com/AniJP/Loan_eligibility_Prediction" target="_blank" rel="noopener"><span>Loan Eligibility Prediction</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a></li>
+      </ul>
     </div>
   </section>
 
